@@ -1,0 +1,61 @@
+body {  /* Provides default fonts and size */
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+  font-size: small;
+  background-color: black;
+}
+
+.centerlogo {
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+  text-align: center;
+  background-color: red;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 100px;
+}
+
+.socialmedia {
+  text-align: center;
+  background-color: cyan;
+  height: 600px;
+  width: auto;
+}
+
+.facebook {
+  background-image: url(icons\facebook.png);
+  background-repeat: no-repeat;
+  height: 200px;
+  text-indent: -99999em;
+  width: 200px;
+  overflow: hidden;
+}
+
+footer {
+  font-family: 'Montserrat', monospace;
+  font-size: 90%;
+  background-color: aquamarine;
+  height: 50px;
+}
+
+footer #footerlogo {
+  width: 50px;
+  padding: 10px;
+  margin: 5px;
+}
+
+footer #footercopy {
+  width: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
