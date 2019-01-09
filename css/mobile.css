@@ -1,56 +1,131 @@
-@font-face {
-  font-family: Roboto;
-  src: url(./Assets/Roboto-Regular.tff);
-}
 
 
 body {  /* Provides default fonts and size */
   font-family: 'Oswald', Verdana, Arial, sans-serif;
   font-size: small;
-  background-color: black;
+  background-color: #F5F8FF;
+  background: url("../BG.png") repeat;
+  -webkit-animation: loader 56s steps(5000) infinite;
+    -moz-animation: loader 56s steps(5000) infinite;
+    -ms-animation: loader 56s steps(5000) infinite;
+    -o-animation: loader 56s steps(5000) infinite;
+    animation: loader 56s steps(5000) infinite;
+  padding-left: 25%
+  
 }
 
-.centerlogo {
-  font-family: 'Roboto', Verdana, Arial, sans-serif;
-  text-align: center;
-  background-color: red;
-  height: 200px;
-  width: auto;
+@-webkit-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@-moz-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@-ms-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@-o-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+ 
+.main {
+  top: 0%;
+  padding-right:27%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
-.socialmedia {
-  padding: 5px;
-  margin: 5px 0px;
-  text-align: center;
-  background-color: cyan;
-  height: 180px;
-  width: auto;
+#logo { /* Camera in the middle */
+  width: 100%;
+  padding-right:23%;
+  margin-left:5px;
 }
 
+#photoshelter {
+  margin-left:-5px;
+}
+.social {
+ width: 85%; 
+ padding:10px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding-left:20px;
+  padding-right:20px;
+  margin-left:-20px;
+}
 footer {
   font-family: 'Montserrat', monospace;
   font-size: 90%;
-  background-color: aquamarine;
   height: 50px;
-  text-align: center;
+  width: 100%;
+  background-color: hsla(200,16%,100%,0.3);
+  position: fixed;
+  margin-top: 700px;
+  bottom: 0px;
+  left: 0px;
+  display: table;
+  border-spacing: 5px;
 }
 
-footer #footerlogo {
-  width: 50px;
-  padding: 10px;
-  margin: 5px;
+#tableRow {
+  display: table-row;
 }
 
-footer #footercopy {
-  width: 5px;
-  padding: 10px;
-  margin: 5px;
+
+#footerLeft{
+  display: table-cell;
+  vertical-align: middle;
+  /*border: 1px white dashed;*/
+  width: 20%;
+  padding: 5px;
 }
 
-img {
-  margin: 10px;
-  border-radius: 10%;
-  background-color: white;
+#footerRight {
+  display: table-cell;
+  vertical-align: middle;
+  /*border: 1px red solid;*/
+  padding: 5px;
 }
 
 a:link {
@@ -58,12 +133,41 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.centerlogo {
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+}
+
 img:hover {
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.05) inset, 0px 0px 8px rgba(255, 255, 255, 0.6);
 }
 
-a:visited {
-  color: #000;
-  text-decoration: none;
+
+#facebook {
+  width: 4.5em;
+  padding:1.6em;
+  display:none;
+}
+
+#twitter {
+  width: 4.5em;
+  padding:1.6em;
+  display:none;
+}
+
+#instagram {
+  width: 4.5em;
+  padding:1.6em;
+  display:none;
+}
+
+#i500px {
+  width: 4.5em;
+  padding:1.6em;
+  display:none;
 }

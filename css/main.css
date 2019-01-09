@@ -1,7 +1,74 @@
+
+
 body {  /* Provides default fonts and size */
   font-family: 'Oswald', Verdana, Arial, sans-serif;
   font-size: small;
   background-color: #F5F8FF;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  
+  
+  /*Blurry Panoramic Background Image Loop
+  
+  scrolling animation down*/
+    background: url("../BG.png") repeat;
+    -webkit-animation: loader 56s steps(5000) infinite;
+    -moz-animation: loader 56s steps(5000) infinite;
+    -ms-animation: loader 56s steps(5000) infinite;
+    -o-animation: loader 56s steps(5000) infinite;
+    animation: loader 56s steps(5000) infinite;
+}
+
+/*scrolling animation right*/
+@-webkit-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@-moz-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@-ms-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@-o-keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+@keyframes loader {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -333.3em 0;
+  }
+}
+
+body {  /* Provides default fonts and size */
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+  font-size: small;
+  background-color: #F5F8FF;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,56 +76,65 @@ body {  /* Provides default fonts and size */
 }
 
 .main {
+  top: 15%;
+  bottom: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
-  top:15%;
   position: absolute;
+  
 }
 
-#logo{
+#logo { /* Camera in the middle */
   justify-content: center;
   align-items: center;
-  width: 340px;
-
+  width: 28em;
+  
 }
 
-.centerlogo {
-  font-family: 'Roboto', Verdana, Arial, sans-serif;
-
-
-}
 
 .social {
-  width: 64px;
-  padding:20px;
+  width: 4.5em;
+  padding:1.6em;
 }
 
+
 .facebook {
-  background-image: url(icons\facebook.png);
+  background-image: url("../fb-g.png");
 }
 
 footer {
   font-family: 'Montserrat', monospace;
   font-size: 90%;
-  background-color: aquamarine;
   height: 50px;
-  top:90%;
-  left:0px;
-  position: absolute;
-  width:100%;
+  width: 100%;
+  background-color: hsla(200,16%,100%,0.3);
+  position: fixed;
+  margin-top: 700px;
+  bottom: 0px;
+  left: 0px;
+  display: table;
+  border-spacing: 5px;
 }
 
-footer #footerlogo {
-  width: 50px;
-  padding: 10px;
-  margin: 5px;
+#tableRow {
+  display: table-row;
 }
 
-footer #footercopy {
-  width: 5px;
-  padding: 10px;
-  margin: 5px;
+
+#footerLeft{
+  display: table-cell;
+  vertical-align: middle;
+  /*border: 1px white dashed;*/
+  width: 20%;
+  padding: 5px;
+}
+
+#footerRight {
+  display: table-cell;
+  vertical-align: middle;
+  /*border: 1px red solid;*/
+  padding: 5px;
 }
 
 a:link {
@@ -69,4 +145,12 @@ a:link {
 a:visited {
   color: #000;
   text-decoration: none;
+}
+
+.centerlogo {
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+}
+
+.social-mobile {
+  display: none;
 }
